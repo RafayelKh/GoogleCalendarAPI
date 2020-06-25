@@ -6,8 +6,7 @@ require __DIR__ . '/vendor/autoload.php';
  * Returns an authorized API client.
  * @return Google_Client the authorized client object
  */
-function getClient()
-{
+function getClient(){
     $client = new Google_Client();
     $client->setApplicationName('Google Calendar API PHP Quickstart');
     $client->setScopes(Google_Service_Calendar::CALENDAR);
@@ -71,7 +70,7 @@ $optParams = array(
 $results = $service->events->listEvents($calendarId, $optParams);
 $events = $results->getItems();
 
-
+//Creating event
 $event = new Google_Service_Calendar_Event(array(
   'summary' => 'Google I/O 2015',
   'location' => '800 Howard St., San Francisco, CA 94103',
