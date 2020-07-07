@@ -15,5 +15,5 @@ if ( ! defined( 'GCAL_ABSPATH' ) ) {
 }
 
 /** Include files */
-include_once GCAL_ABSPATH . 'includes/class-gcal.php';
-include_once GCAL_ABSPATH . 'includes/gcal-functions.php';
+require_once GCAL_ABSPATH . 'includes/class-gcal.php';
+require_once GCAL_ABSPATH . 'includes/gcal-functions.php';
